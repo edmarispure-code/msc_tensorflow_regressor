@@ -36,8 +36,8 @@ async function run() {
     // create the model
     //const model = createModel();
     //tfvis.show.modelSummary({name: 'Model Summary'}, model);
-    const tensorData =  convertToTensor(data);
-    const {inputs, labels} = tensorData;
+    //const tensorData =  convertToTensor(data);
+   //const {inputs, labels} = tensorData;
 
     //Train the model
     //await trainModel(model, inputs, labels);
@@ -53,7 +53,7 @@ async function run() {
         value: d.mpg,
     }));
     
-    // Show a barchart of the MPG values
+    //Show a barchart of the MPG values
     tfvis.render.barchart(
         {name: 'Bar Chart of the MPG values'},
         barchartValues, {height: 300, width: 800, 
